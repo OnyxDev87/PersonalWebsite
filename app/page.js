@@ -20,9 +20,36 @@ export default function Home() {
         <Image 
           src="/thing.png" 
           alt="A relevant alt text" 
-          width={500} 
-          height={300} 
+          width={700} 
+          height={300}
+          className="image"
         />
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div className="projects">
+        <h2 className="projects-title">Projects</h2>
+        <ul className="projects-list">
+          <li className="project-item">
+            <a href="https://github.com/OnyxDev87/HackKnight">Machine Learning</a>
+          </li>
+          <li className="project-item">
+            <a href="https://https://github.com/OnyxDev87/ParticleStuff">SoftBody Simulation</a>
+          </li>
+        </ul>
       </div>
     </div>
   );
