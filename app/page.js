@@ -47,7 +47,7 @@ export default function Home() {
             <a href="https://github.com/OnyxDev87/HackKnight">Machine Learning</a>
           </li>
           <li className="project-item">
-            <a href="https://https://github.com/OnyxDev87/ParticleStuff">SoftBody Simulation</a>
+            <a href="https://github.com/OnyxDev87/ParticleStuff">SoftBody Simulation</a>
           </li>
         </ul>
       </div>
