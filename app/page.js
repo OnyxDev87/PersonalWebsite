@@ -1,5 +1,30 @@
 import Image from 'next/image';
 
+function Project(name, description, image, link) {
+  const project = {
+    name,
+    description,
+    image,
+    link
+  }
+  return (
+    <div className="project">
+      <h3 classname="project-name">{project.name}</h3>
+      <p className="project-description">{project.description}</p>
+      <Image
+        src={project.image}
+        alt={`${project.name} image`}
+        width={300}
+        height={200}
+        className="project-image"
+      />
+      <a href={project.link} className="project-link">
+        View Project
+      </a>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div>
@@ -42,15 +67,22 @@ export default function Home() {
       <br></br>
       <div className="projects">
         <h2 className="projects-title">Projects</h2>
-        <ul className="projects-list">
-          <li className="project-item">
-            <a href="https://github.com/OnyxDev87/HackKnight">Machine Learning</a>
-          </li>
-          <li className="project-item">
-            <a href="https://https://github.com/OnyxDev87/ParticleStuff">SoftBody Simulation</a>
-          </li>
-        </ul>
+        {Project(
+          "HackKnight",
+          "A game where you hack your way through a series of challenges.",
+          "/hackknight.png",
+          "https://github.com/OnyxDev87/HackKnight"
+        )}
+        {Project(
+          "Particle Stuff",
+          "A collection of particle simulations.",
+          "/particle-stuff.png",
+          "https://github.com/OnyxDev87/ParticleStuff"
+        )}
       </div>
     </div>
   );
 }
+
+// https://github.com/OnyxDev87/HackKnight
+// https://https://github.com/OnyxDev87/ParticleStuff
